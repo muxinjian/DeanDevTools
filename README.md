@@ -4,6 +4,21 @@
 [![Version](https://img.shields.io/cocoapods/v/DeanDevTools.svg?style=flat)](https://cocoapods.org/pods/DeanDevTools)
 [![License](https://img.shields.io/cocoapods/l/DeanDevTools.svg?style=flat)](https://cocoapods.org/pods/DeanDevTools)
 [![Platform](https://img.shields.io/cocoapods/p/DeanDevTools.svg?style=flat)](https://cocoapods.org/pods/DeanDevTools)
+DeanDevTools 封装了iOS快速开发工具,
+DeanDevTools/FPS 屏幕帧频数
+DeanDevTools/CallStack 卡断打印函数调用栈信息
+DeanDevTools/ClangTrace 二进制插座缓存程序启动的符号表,加快程序启动速度
+整个库集成:
+
+pod 'DeanDevTools'
+
+调试工具组件集：<屏幕帧频数>
+pod 'DeanDevTools/FPS'
+FLEX定制化集成:
+pod 'DeanDevTools/CallStack' < 卡断打印函数调用栈信息>
+
+性能数据采集上报:<二进制插座缓存程序启动的符号表,加快程序启动速度>
+pod 'DeanDevTools/ClangTrace'
 
 ## Example
 
