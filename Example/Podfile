@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'DeanDevTools_Example' do
+  pod 'DeanDevTools', :path => '../'
+
+  target 'DeanDevTools_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
