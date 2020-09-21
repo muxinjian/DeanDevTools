@@ -9,29 +9,31 @@
 Pod::Spec.new do |s|
   s.name             = 'DeanDevTools'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DeanDevTools.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+  s.summary          = 'DeanDevTools 封装了iOS快速开发工具, DeanDevTools/FPS 屏幕帧频数 DeanDevTools/CallStack 卡断打印函数调用栈信息 DeanDevTools/ClangTrace 二进制插座缓存程序启动的符号表,加快程序启动速度'
   s.homepage         = 'https://github.com/muxinjian/DeanDevTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'muxinjian' => 'muxinjian@huatu.com' }
+  s.author           = { 'muxinjian' => 'muxinjian.job@gmail.com' }
+  s.social_media_url    = "https://juejin.im/user/3192637497025293"
+  s.platform            = :ios, "8.0"
   s.source           = { :git => 'https://github.com/muxinjian/DeanDevTools.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.requires_arc        = true
+  #s.source_files = 'DeanDevTools/Classes/**/*'
+  #帧频率显示工具
+  s.subspec 'FPS' do |fps|
+    fps.source_files = 'DeanDevTools/Classes/FPS/**/*'
+    end
+ 
+  #卡顿检测打印堆栈信息
+  s.subspec 'CallStack' do |cs|
+    cs.source_files = 'DeanDevTools/Classes/CallStack/**/*'
+    end
+  #二进制插桩
+  s.subspec 'ClangTrace' do |ct|
+    ct.source_files = 'DeanDevTools/Classes/ClangTrace/**/*'
+    end
+ 
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'DeanDevTools/Classes/**/*'
-  
   # s.resource_bundles = {
   #   'DeanDevTools' => ['DeanDevTools/Assets/*.png']
   # }
@@ -40,3 +42,4 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
+

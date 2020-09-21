@@ -1,0 +1,6 @@
+framework module DeanDevTools {
+  umbrella header "DeanDevTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

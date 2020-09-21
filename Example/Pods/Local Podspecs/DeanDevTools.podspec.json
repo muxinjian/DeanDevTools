@@ -1,0 +1,22 @@
+{
+  "name": "DeanDevTools",
+  "version": "0.1.0",
+  "summary": "A short description of DeanDevTools.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/muxinjian/DeanDevTools",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "muxinjian": "muxinjian@huatu.com"
+  },
+  "source": {
+    "git": "https://github.com/muxinjian/DeanDevTools.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DeanDevTools/Classes/**/*"
+}
