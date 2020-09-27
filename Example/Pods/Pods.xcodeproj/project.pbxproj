@@ -232,10 +232,10 @@
 		1BF5E7072518EAFC005324F5 /* CallStack */ = {
 			isa = PBXGroup;
 			children = (
-				1BF5E7082518EAFC005324F5 /* DNMonitorRunloop.h */,
 				1BF5E7092518EAFC005324F5 /* DNCallStack.h */,
-				1BF5E70A2518EAFC005324F5 /* DNMonitorRunloop.m */,
 				1BF5E70B2518EAFC005324F5 /* DNCallStack.m */,
+				1BF5E7082518EAFC005324F5 /* DNMonitorRunloop.h */,
+				1BF5E70A2518EAFC005324F5 /* DNMonitorRunloop.m */,
 			);
 			path = CallStack;
 			sourceTree = "<group>";
@@ -252,10 +252,10 @@
 		1BF5E7102518EAFC005324F5 /* FPS */ = {
 			isa = PBXGroup;
 			children = (
-				1BF5E7112518EAFC005324F5 /* DeanToolFPS.m */,
-				1BF5E7122518EAFC005324F5 /* DeanToolSuspendingView.m */,
 				1BF5E7132518EAFC005324F5 /* DeanToolFPS.h */,
+				1BF5E7112518EAFC005324F5 /* DeanToolFPS.m */,
 				1BF5E7142518EAFC005324F5 /* DeanToolSuspendingView.h */,
+				1BF5E7122518EAFC005324F5 /* DeanToolSuspendingView.m */,
 			);
 			path = FPS;
 			sourceTree = "<group>";
