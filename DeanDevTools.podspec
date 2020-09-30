@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
     end
   
   #AES256 加密/解密
-  s.subspec 'ClangTrace' do |aes|
+  s.subspec 'AESCrypt' do |aes|
     aes.source_files = 'DeanDevTools/Classes/AESCrypt/**/*'
     aes.dependency 'MJExtension' , '~> 3.2.1'
     end
