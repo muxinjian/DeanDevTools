@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DeanDevTools'
-  s.version          = '0.1.0'
+  s.version          = '1.1.0'
   s.summary          = 'DeanDevTools 封装了iOS快速开发工具, DeanDevTools/FPS 屏幕帧频数 DeanDevTools/CallStack 卡断打印函数调用栈信息 DeanDevTools/ClangTrace 二进制插座缓存程序启动的符号表,加快程序启动速度'
   s.homepage         = 'https://github.com/muxinjian/DeanDevTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author           = { 'muxinjian' => 'muxinjian.job@gmail.com' }
   s.social_media_url    = "https://juejin.im/user/3192637497025293"
   s.platform            = :ios, "8.0"
-  s.source           = { :git => 'https://github.com/muxinjian/DeanDevTools.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/muxinjian/DeanDevTools.git', :tag => 'v1.1.0' }
   s.requires_arc        = true
   #s.source_files = 'DeanDevTools/Classes/**/*'
   #帧频率显示工具
