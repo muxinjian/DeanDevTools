@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author           = { 'muxinjian' => 'muxinjian.job@gmail.com' }
   s.social_media_url    = "https://juejin.im/user/3192637497025293"
   s.platform            = :ios, "8.0"
-  s.source           = { :git => 'https://github.com/muxinjian/DeanDevTools.git', :tag => 'v1.1.0' }
+  s.source           = { :git => 'https://github.com/muxinjian/DeanDevTools.git', :tag => s.version.to_s }
   s.requires_arc        = true
   #s.source_files = 'DeanDevTools/Classes/**/*'
   #帧频率显示工具
