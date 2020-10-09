@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DeanDevTools'
-  s.version          = 'v1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'DeanDevTools 封装了iOS快速开发工具, DeanDevTools/FPS 屏幕帧频数 DeanDevTools/CallStack 卡断打印函数调用栈信息 DeanDevTools/ClangTrace 二进制插座缓存程序启动的符号表,加快程序启动速度'
   s.homepage         = 'https://github.com/muxinjian/DeanDevTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
     end
   
   #AES256 加密/解密
-  s.subspec 'ClangTrace' do |aes|
+  s.subspec 'AESCrypt' do |aes|
     aes.source_files = 'DeanDevTools/Classes/AESCrypt/**/*'
     aes.dependency 'MJExtension' , '~> 3.2.1'
     end
