@@ -90,6 +90,7 @@
 		1B10D70C25248A1000C8C329 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		1B10D70D25248A1000C8C329 /* AES256Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES256Crypt.m; sourceTree = "<group>"; };
 		1B10D70E25248A1000C8C329 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		1BE8DED025304498002F0700 /* deanDevTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deanDevTools.h; sourceTree = "<group>"; };
 		1BF5E7082518EAFC005324F5 /* DNMonitorRunloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMonitorRunloop.h; sourceTree = "<group>"; };
 		1BF5E7092518EAFC005324F5 /* DNCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNCallStack.h; sourceTree = "<group>"; };
 		1BF5E70A2518EAFC005324F5 /* DNMonitorRunloop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMonitorRunloop.m; sourceTree = "<group>"; };
@@ -246,6 +247,7 @@
 		1BF5E7062518EAFC005324F5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1BE8DED025304498002F0700 /* deanDevTools.h */,
 				1B10D70825248A1000C8C329 /* AESCrypt */,
 				1BF5E7072518EAFC005324F5 /* CallStack */,
 				1BF5E70C2518EAFC005324F5 /* ClangTrace */,

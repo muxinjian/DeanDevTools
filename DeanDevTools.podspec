@@ -36,16 +36,15 @@ Pod::Spec.new do |s|
   #AES256 加密/解密
   s.subspec 'AESCrypt' do |aes|
     aes.source_files = 'DeanDevTools/Classes/AESCrypt/**/*'
-    aes.dependency 'MJExtension' , '~> 3.2.1'
+#    aes.dependency 'MJExtension' , '~> 3.2.1'
     end
- 
+  
+  s.public_header_files = 'Pod/Classes/deanDevTools.h'
+ #   s.frameworks = 'UIKit', 'MapKit',
+  s.dependency 'MJExtension' , '~> 3.2.1'
 
   # s.resource_bundles = {
   #   'DeanDevTools' => ['DeanDevTools/Assets/*.png']
   # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
 
