@@ -13,6 +13,12 @@
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
+		1B10D70F25248A1000C8C329 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B10D70925248A1000C8C329 /* NSString+Base64.m */; };
+		1B10D71025248A1000C8C329 /* AES256Crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B10D70A25248A1000C8C329 /* AES256Crypt.h */; };
+		1B10D71125248A1000C8C329 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B10D70B25248A1000C8C329 /* NSData+Base64.h */; };
+		1B10D71225248A1000C8C329 /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B10D70C25248A1000C8C329 /* NSString+Base64.h */; };
+		1B10D71325248A1000C8C329 /* AES256Crypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B10D70D25248A1000C8C329 /* AES256Crypt.m */; };
+		1B10D71425248A1000C8C329 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B10D70E25248A1000C8C329 /* NSData+Base64.m */; };
 		1BF5E7152518EAFC005324F5 /* DNMonitorRunloop.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF5E7082518EAFC005324F5 /* DNMonitorRunloop.h */; };
 		1BF5E7162518EAFC005324F5 /* DNCallStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF5E7092518EAFC005324F5 /* DNCallStack.h */; };
 		1BF5E7172518EAFC005324F5 /* DNMonitorRunloop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5E70A2518EAFC005324F5 /* DNMonitorRunloop.m */; };
@@ -78,6 +84,13 @@
 		0A2E79A7A1609C11B5711311CE82438F /* Pods-DeanDevTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeanDevTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		1B10D70925248A1000C8C329 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		1B10D70A25248A1000C8C329 /* AES256Crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES256Crypt.h; sourceTree = "<group>"; };
+		1B10D70B25248A1000C8C329 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		1B10D70C25248A1000C8C329 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		1B10D70D25248A1000C8C329 /* AES256Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES256Crypt.m; sourceTree = "<group>"; };
+		1B10D70E25248A1000C8C329 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		1BE8DED025304498002F0700 /* deanDevTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deanDevTools.h; sourceTree = "<group>"; };
 		1BF5E7082518EAFC005324F5 /* DNMonitorRunloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMonitorRunloop.h; sourceTree = "<group>"; };
 		1BF5E7092518EAFC005324F5 /* DNCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNCallStack.h; sourceTree = "<group>"; };
 		1BF5E70A2518EAFC005324F5 /* DNMonitorRunloop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMonitorRunloop.m; sourceTree = "<group>"; };
@@ -218,9 +231,24 @@
 			path = "Example/Pods/Target Support Files/DeanDevTools";
 			sourceTree = "<group>";
 		};
+		1B10D70825248A1000C8C329 /* AESCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				1B10D70A25248A1000C8C329 /* AES256Crypt.h */,
+				1B10D70D25248A1000C8C329 /* AES256Crypt.m */,
+				1B10D70B25248A1000C8C329 /* NSData+Base64.h */,
+				1B10D70E25248A1000C8C329 /* NSData+Base64.m */,
+				1B10D70C25248A1000C8C329 /* NSString+Base64.h */,
+				1B10D70925248A1000C8C329 /* NSString+Base64.m */,
+			);
+			path = AESCrypt;
+			sourceTree = "<group>";
+		};
 		1BF5E7062518EAFC005324F5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1BE8DED025304498002F0700 /* deanDevTools.h */,
+				1B10D70825248A1000C8C329 /* AESCrypt */,
 				1BF5E7072518EAFC005324F5 /* CallStack */,
 				1BF5E70C2518EAFC005324F5 /* ClangTrace */,
 				1BF5E7102518EAFC005324F5 /* FPS */,
@@ -232,10 +260,10 @@
 		1BF5E7072518EAFC005324F5 /* CallStack */ = {
 			isa = PBXGroup;
 			children = (
-				1BF5E7082518EAFC005324F5 /* DNMonitorRunloop.h */,
 				1BF5E7092518EAFC005324F5 /* DNCallStack.h */,
-				1BF5E70A2518EAFC005324F5 /* DNMonitorRunloop.m */,
 				1BF5E70B2518EAFC005324F5 /* DNCallStack.m */,
+				1BF5E7082518EAFC005324F5 /* DNMonitorRunloop.h */,
+				1BF5E70A2518EAFC005324F5 /* DNMonitorRunloop.m */,
 			);
 			path = CallStack;
 			sourceTree = "<group>";
@@ -252,10 +280,10 @@
 		1BF5E7102518EAFC005324F5 /* FPS */ = {
 			isa = PBXGroup;
 			children = (
-				1BF5E7112518EAFC005324F5 /* DeanToolFPS.m */,
-				1BF5E7122518EAFC005324F5 /* DeanToolSuspendingView.m */,
 				1BF5E7132518EAFC005324F5 /* DeanToolFPS.h */,
+				1BF5E7112518EAFC005324F5 /* DeanToolFPS.m */,
 				1BF5E7142518EAFC005324F5 /* DeanToolSuspendingView.h */,
+				1BF5E7122518EAFC005324F5 /* DeanToolSuspendingView.m */,
 			);
 			path = FPS;
 			sourceTree = "<group>";
@@ -435,10 +463,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B10D71125248A1000C8C329 /* NSData+Base64.h in Headers */,
+				1B10D71025248A1000C8C329 /* AES256Crypt.h in Headers */,
 				0192D839D29C9A60646C9A046BB1E7BA /* DeanDevTools-umbrella.h in Headers */,
 				1BF5E71E2518EAFC005324F5 /* DeanToolFPS.h in Headers */,
 				1BF5E7152518EAFC005324F5 /* DNMonitorRunloop.h in Headers */,
 				1BF5E71F2518EAFC005324F5 /* DeanToolSuspendingView.h in Headers */,
+				1B10D71225248A1000C8C329 /* NSString+Base64.h in Headers */,
 				1BF5E71A2518EAFC005324F5 /* DeanClangTrace.h in Headers */,
 				1BF5E7162518EAFC005324F5 /* DNCallStack.h in Headers */,
 			);
@@ -644,12 +675,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B10D71325248A1000C8C329 /* AES256Crypt.m in Sources */,
 				1BF5E7172518EAFC005324F5 /* DNMonitorRunloop.m in Sources */,
 				1BF5E71C2518EAFC005324F5 /* DeanToolFPS.m in Sources */,
 				C35692DA85CF72604B7C4DE8E6B5F05F /* DeanDevTools-dummy.m in Sources */,
 				1BF5E7182518EAFC005324F5 /* DNCallStack.m in Sources */,
 				1BF5E71D2518EAFC005324F5 /* DeanToolSuspendingView.m in Sources */,
 				1BF5E7192518EAFC005324F5 /* DeanClangTrace.m in Sources */,
+				1B10D70F25248A1000C8C329 /* NSString+Base64.m in Sources */,
+				1B10D71425248A1000C8C329 /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

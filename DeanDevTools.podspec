@@ -8,7 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DeanDevTools'
-  s.version          = '0.1.1'
+  s.version          = '1.1.0'
+
   s.summary          = 'DeanDevTools 封装了iOS快速开发工具, DeanDevTools/FPS 屏幕帧频数 DeanDevTools/CallStack 卡断打印函数调用栈信息 DeanDevTools/ClangTrace 二进制插座缓存程序启动的符号表,加快程序启动速度'
   s.homepage         = 'https://github.com/muxinjian/DeanDevTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -32,14 +33,19 @@ Pod::Spec.new do |s|
   s.subspec 'ClangTrace' do |ct|
     ct.source_files = 'DeanDevTools/Classes/ClangTrace/**/*'
     end
- 
+  
+  #AES256 加密/解密
+  s.subspec 'AESCrypt' do |aes|
+    aes.source_files = 'DeanDevTools/Classes/AESCrypt/**/*'
+#    aes.dependency 'MJExtension' , '~> 3.2.1'
+    end
+  
+  s.public_header_files = 'Pod/Classes/deanDevTools.h'
+ #   s.frameworks = 'UIKit', 'MapKit',
+  s.dependency 'MJExtension' , '~> 3.2.1'
 
   # s.resource_bundles = {
   #   'DeanDevTools' => ['DeanDevTools/Assets/*.png']
   # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
 
