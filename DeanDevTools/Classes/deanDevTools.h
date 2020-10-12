@@ -11,6 +11,6 @@
 #import "AES256Crypt.h"
 #import "DNMonitorRunloop.h"
 #import "DeanClangTrace.h"
-
+#impott "UncaughtExceptionHandler.h"
 
 #endif /* deanDevTools_h */

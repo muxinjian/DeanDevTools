@@ -29,6 +29,11 @@ Pod::Spec.new do |s|
   s.subspec 'CallStack' do |cs|
     cs.source_files = 'DeanDevTools/Classes/CallStack/**/*'
     end
+  
+  #异常捕获
+  s.subspec 'CrashCatched' do |cc|
+    cc.source_files = 'DeanDevTools/Classes/CrashCatched/**/*'
+    end
   #二进制插桩
   s.subspec 'ClangTrace' do |ct|
     ct.source_files = 'DeanDevTools/Classes/ClangTrace/**/*'

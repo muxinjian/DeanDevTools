@@ -19,6 +19,8 @@
 		1B10D71225248A1000C8C329 /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B10D70C25248A1000C8C329 /* NSString+Base64.h */; };
 		1B10D71325248A1000C8C329 /* AES256Crypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B10D70D25248A1000C8C329 /* AES256Crypt.m */; };
 		1B10D71425248A1000C8C329 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B10D70E25248A1000C8C329 /* NSData+Base64.m */; };
+		1B83FF2D25347AF200E530F7 /* UncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B83FF2B25347AF200E530F7 /* UncaughtExceptionHandler.h */; };
+		1B83FF2E25347AF200E530F7 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B83FF2C25347AF200E530F7 /* UncaughtExceptionHandler.m */; };
 		1BF5E7152518EAFC005324F5 /* DNMonitorRunloop.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF5E7082518EAFC005324F5 /* DNMonitorRunloop.h */; };
 		1BF5E7162518EAFC005324F5 /* DNCallStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF5E7092518EAFC005324F5 /* DNCallStack.h */; };
 		1BF5E7172518EAFC005324F5 /* DNMonitorRunloop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF5E70A2518EAFC005324F5 /* DNMonitorRunloop.m */; };
@@ -90,6 +92,8 @@
 		1B10D70C25248A1000C8C329 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		1B10D70D25248A1000C8C329 /* AES256Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES256Crypt.m; sourceTree = "<group>"; };
 		1B10D70E25248A1000C8C329 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		1B83FF2B25347AF200E530F7 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		1B83FF2C25347AF200E530F7 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		1BE8DED025304498002F0700 /* deanDevTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deanDevTools.h; sourceTree = "<group>"; };
 		1BF5E7082518EAFC005324F5 /* DNMonitorRunloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMonitorRunloop.h; sourceTree = "<group>"; };
 		1BF5E7092518EAFC005324F5 /* DNCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNCallStack.h; sourceTree = "<group>"; };
@@ -244,10 +248,20 @@
 			path = AESCrypt;
 			sourceTree = "<group>";
 		};
+		1B83FF2A25347AF200E530F7 /* CrashCatched */ = {
+			isa = PBXGroup;
+			children = (
+				1B83FF2B25347AF200E530F7 /* UncaughtExceptionHandler.h */,
+				1B83FF2C25347AF200E530F7 /* UncaughtExceptionHandler.m */,
+			);
+			path = CrashCatched;
+			sourceTree = "<group>";
+		};
 		1BF5E7062518EAFC005324F5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				1BE8DED025304498002F0700 /* deanDevTools.h */,
+				1B83FF2A25347AF200E530F7 /* CrashCatched */,
 				1B10D70825248A1000C8C329 /* AESCrypt */,
 				1BF5E7072518EAFC005324F5 /* CallStack */,
 				1BF5E70C2518EAFC005324F5 /* ClangTrace */,
@@ -469,6 +483,7 @@
 				1BF5E71E2518EAFC005324F5 /* DeanToolFPS.h in Headers */,
 				1BF5E7152518EAFC005324F5 /* DNMonitorRunloop.h in Headers */,
 				1BF5E71F2518EAFC005324F5 /* DeanToolSuspendingView.h in Headers */,
+				1B83FF2D25347AF200E530F7 /* UncaughtExceptionHandler.h in Headers */,
 				1B10D71225248A1000C8C329 /* NSString+Base64.h in Headers */,
 				1BF5E71A2518EAFC005324F5 /* DeanClangTrace.h in Headers */,
 				1BF5E7162518EAFC005324F5 /* DNCallStack.h in Headers */,
@@ -676,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B10D71325248A1000C8C329 /* AES256Crypt.m in Sources */,
+				1B83FF2E25347AF200E530F7 /* UncaughtExceptionHandler.m in Sources */,
 				1BF5E7172518EAFC005324F5 /* DNMonitorRunloop.m in Sources */,
 				1BF5E71C2518EAFC005324F5 /* DeanToolFPS.m in Sources */,
 				C35692DA85CF72604B7C4DE8E6B5F05F /* DeanDevTools-dummy.m in Sources */,
